@@ -16,6 +16,7 @@ body{
 }
 .tab-container{
     border-radius: 80px;
+    overflow: hidden;
     display: flex;
     width: 1000px;
     background: radial-gradient(circle at 10% 20%, rgb(149, 219, 254) 0%, rgb(7, 134, 197) 90.1%);    height: 700px;
@@ -34,11 +35,12 @@ body{
 .logo{
     text-align: center;
     display: flex;
-    gap: 30px;
+    gap: 10px;
     align-items: center;
-    width: fit-content;
+    width: 360px;
     margin-top: 20px;
     color: aliceblue;
+    
 }
 
 
@@ -50,6 +52,7 @@ aside{
     align-items: center;
     width: 100px;
     justify-content: center;
+    padding-left: 40px;
 }
 aside, ul{
     display: flex;
@@ -75,6 +78,7 @@ li, a{
 .tab-content{
     width: 100%;
     position: relative;
+   
 }
 .hero{
     display: flex;
@@ -93,7 +97,7 @@ span{
     font-size: 2em;
     font-weight: 900;
 }
-button{
+.resume-btn{
     width: 200px;
     height: 40px;
     border-radius: 10px;
@@ -104,5 +108,119 @@ button{
     border-end-start-radius: 80px;
 }
 .me{
-    line-height: 2.5em;
+    line-height: 2em;
 }
+
+
+/*-------------SKILLS */
+.skill-title{
+    border: 7px solid white;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    width: 50px;
+    margin-top: 20px;
+
+}
+.skills img{
+    width: 100px;
+}
+.skills{
+    display: flex;
+    width: 490px;
+    align-items: center;
+    gap: 60px;
+    flex-wrap: wrap;
+    margin: 100px 120px;
+}
+.service{
+        transform: translateY(100%);
+
+}
+
+
+/*-------------projct */
+.projects{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 800px;
+    gap: 20px;
+    height: 220px;
+    overflow: hidden;
+    padding-top: 7px;
+    margin-top: 100px;
+    
+   
+}
+.project-container{
+    transform: translateY(100%);
+
+}
+
+.content img{
+    width: 240px;
+    cursor: pointer;
+}
+.content button{
+    width: 100px;
+    height: 30px;
+}
+.content img, .description p{
+    width: 200px;
+    height: 200px;
+
+}
+.show-more-btn{
+    width: 100px;
+    height: 30px;
+    background-color: white;
+    cursor: pointer;
+    
+}
+.more-btn{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+.show-more{
+    height: 400px;
+   position: relative;
+}
+
+
+/*------------contact */
+
+.contact-form{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 30px;
+}
+.contact-container{
+    transform: translateY(100%);
+}
+
+.name, input[type = email], .message{
+    border-color: white;
+    width: 200px;
+    height: 40px;
+    border-top: none;
+    border-left:none ;
+    border-right: none;
+    background-color: transparent;
+    outline: none;
+}
+button[type = submit]{
+    width: 120px;
+    height: 40px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+   
+}
+

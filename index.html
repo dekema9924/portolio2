@@ -11,10 +11,10 @@
     <div class="tab-container">
         <aside>
             <ul>
-                <li><a href="http://"></a><i class="fa-solid fa-house fa-lg"></i></li>
-                <li><a href="http://"></a><i class="fa-solid fa-user fa-lg"></i></li>
-                <li><a href="http://"></a><i class="fa-solid fa-briefcase fa-lg"></i></li>
-                <li><a href="http://"></a><i class="fa-solid fa-envelope fa-lg"></i></li>
+                <li><a href="http://"></a><i class="fa-solid fa-house fa-lg" id="home-btn" onclick="getHome()"></i></li>
+                <li><a href="http://"></a><i class="fa-solid fa-user fa-lg" id="service-btn" onclick="getService()"></i></li>
+                <li><a href="http://"></a><i class="fa-solid fa-briefcase fa-lg" id="project-btn"></i></li>
+                <li><a href="http://"></a><i class="fa-solid fa-envelope fa-lg" id="contact-btn"></i></li>
                 <a href="http://"><i class="fa-brands fa-linkedin fa-xl"></i></a>
                 <a href="http://"><i class="fa-brands fa-github fa-lg"></i></a>
             </ul>
@@ -32,13 +32,85 @@
                     <h1>I'm</h1>
                     <span>DANIEL</span>
                     <p>I'm an aspiring FullStack Developer.</p>
-                    <button>Resume</button>
+                    <button class="resume-btn">Resume</button>
                 </div>
                 
             </div>
 
 
 
+        </div>
+        <div id="services" class="service">
+            <div class="skill-title">
+                <h1>services</h1>
+            </div>
+            <div class="skills">
+                <img src="./images/icons/bootstrap.png" alt="">
+                <img src="./images/icons/css-3.png" alt="">
+                <img src="./images/icons/git.png" alt="">
+                <img src="./images/icons/html-5.png" alt="">
+                <img src="./images/icons/js.png" alt="">
+                <img src="./images/icons/nodejs.png" alt="">
+                <img src="./images/icons/api.png" alt="">
+                <img src="./images/icons/sql-server.png" alt="">
+
+            </div>
+        </div>
+
+        <div id="project" class="project-container">
+            <div class="skill-title">
+                <h1>projects</h1>
+            </div>
+            <div class="projects">
+               
+    
+               <div class="content" >
+                    <img src="./projects/Screenshot (46).png" alt="">
+                  
+               </div>
+    
+               <div class="content">
+                    <img src="./projects/Screenshot (47).png" alt="">
+                </div>
+    
+                <div class="content">
+                    <img src="./projects/Screenshot (43).png" alt="">
+                </div>
+                <div class="content">
+                    <img src="./projects/Screenshot (41).png" alt="">
+                </div>
+                <div class="content">
+                    <img src="./projects/Screenshot (42).png" alt="">
+                </div>
+                <div class="content">
+                    <img src="./projects/Screenshot (45).png" alt="">
+                </div>
+                          
+            </div>
+            <div class="more-btn">
+                <button class="show-more-btn">Show more</button>
+            </div>
+
+          
+
+        </div>
+
+        <div id="contact" class="contact-container">
+            <div class="skill-title">
+                <h1>contact</h1>
+            </div>
+            <p></p>
+            <div class="contact-form">
+                <form action="mailto:danekema9924@gmail.com">
+                    <input type="text" class="name" placeholder="Name" autocomplete="off">
+                    <input type="email" name="" id="" placeholder="Email" autocomplete="off">
+                    <textarea class="message"  placeholder="Message..." rows="14" cols="10" wrap="soft"></textarea>
+                    <button type="submit">SUBMIT</button>
+    
+                </form>
+                <img src="./images/hero-img-removebg-preview.png" alt="">
+
+            </div>
         </div>
 
 
