@@ -70,6 +70,18 @@ contact_btn.addEventListener('click',()=>{
 })
 
 
+let dark_mode = document.getElementById('darkmode');
+let tab_container = document.querySelector('.tab-container ');
+
+dark_mode.addEventListener('click', ()=>{
+    console.log(tab_container)
+    tab_container.classList.add('change-mode')
+
+    
+})
+
+
+
 
 
 

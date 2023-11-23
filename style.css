@@ -3,16 +3,17 @@
     box-sizing: border-box;
     padding: 0;
 }
-a{
+.navigation{
     color: black;
+    text-decoration: none;
 }
+
 body{
     background-color: rgb(149, 219, 254);
     display: flex;
     justify-content: center;
     margin-top: 60px;
 
-   
 }
 .tab-container{
     border-radius: 80px;
@@ -64,7 +65,7 @@ aside, ul{
 
 }
 
-li, a{
+li, .navigation{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -137,7 +138,7 @@ span{
   background-size: 200% auto;
   color: #fff;
   background-clip: text;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: textclip 2s linear infinite;
   display: inline-block;
@@ -198,22 +199,56 @@ span{
     transform: translateY(100%);
     transition: all 300ms ease-in-out;
 
-
 }
 
-.content img{
-    width: 240px;
+.container {
+    position: relative;
+    width: 200px;
     cursor: pointer;
-}
-.content button{
-    width: 100px;
-    height: 30px;
-}
-.content img, .description p{
+  }
+  .text a{
+    color: white;
+    text-decoration: none;
+  }
+  
+  .image {
+    display: block;
     width: 200px;
     height: 200px;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 200px;
+    height: 200px;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #008CBA;
+  
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
 
-}
+
+
 .show-more-btn{
     width: 100px;
     height: 30px;
@@ -292,10 +327,10 @@ button[type=submit], .show-more-btn{
   z-index: 1;
   cursor: pointer;
   transition:         0.08s ease-in;
-  -o-transition:      0.08s ease-in;
-  -ms-transition:     0.08s ease-in;
-  -moz-transition:    0.08s ease-in;
-  -webkit-transition: 0.08s ease-in;
+ transition:      0.08s ease-in;
+  transition:     0.08s ease-in;
+  transition:    0.08s ease-in;
+  transition: 0.08s ease-in;
 }
 
 button[type=submit]::before, .show-more-btn::before{
@@ -317,4 +352,6 @@ button[type=submit]:hover, .show-more-btn:hover{
   
   button[type=submit]:hover::before, .show-more-btn:hover::before{
     top: 0;
-  }
+}
+
+
