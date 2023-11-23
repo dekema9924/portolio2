@@ -1,3 +1,5 @@
+
+//projects more and less js
 let projects = document.querySelector('.projects');
 let show_more_btn = document.querySelector('.show-more-btn')
 
@@ -11,7 +13,7 @@ show_more_btn.addEventListener('click', ()=>{
     }
 })
 
-
+//changing sections
 
 let home = document.getElementById('home');
 let service = document.getElementById('services');
@@ -70,12 +72,29 @@ contact_btn.addEventListener('click',()=>{
 })
 
 
+//light and dark mode
+let navigation = document.querySelectorAll('.navigation')
 let dark_mode = document.getElementById('darkmode');
 let tab_container = document.querySelector('.tab-container ');
-
+let dark = document.querySelectorAll('.dark');
+let btns = document.querySelectorAll('button');
+let body = document.querySelector('body');
 dark_mode.addEventListener('click', ()=>{
     console.log(tab_container)
-    tab_container.classList.add('change-mode')
+    tab_container.classList.toggle('light-mode')
+    navigation.forEach(nav=>{
+       nav.classList.toggle('dark-mode-navigation')
+    })
+    dark.forEach(dark_nav=>{
+        dark_nav.classList.toggle('dark-mode-navigation')
+     })
+     btns.forEach(buttons =>{
+        console.log(buttons)
+        buttons.style.color = 'white'
+
+     })
+     body.classList.toggle('body-color-change')
+
 
     
 })

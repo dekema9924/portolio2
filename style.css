@@ -23,6 +23,7 @@ body{
      height: 700px;
      overflow: hidden;
      position: absolute;
+     
 }
 .logo img{
     width: 70px;
@@ -35,7 +36,6 @@ body{
 
 }
 
-
 .logo{
     text-align: center;
     display: flex;
@@ -46,9 +46,6 @@ body{
     color: aliceblue;
     
 }
-
-
-
 
 aside{
     display: flex;
@@ -192,6 +189,8 @@ span{
     overflow: hidden;
     padding-top: 7px;
     margin-top: 100px;
+    transition: all .7s;
+
     
    
 }
@@ -254,16 +253,20 @@ span{
     height: 30px;
     background-color: white;
     cursor: pointer;
+
     
 }
 .more-btn{
     display: flex;
     justify-content: center;
     margin-top: 10px;
+
 }
 .show-more{
     height: 400px;
    position: relative;
+   transition: all .7s;
+
 }
 
 
@@ -331,6 +334,7 @@ button[type=submit], .show-more-btn{
   transition:     0.08s ease-in;
   transition:    0.08s ease-in;
   transition: 0.08s ease-in;
+  border: 2px solid white;
 }
 
 button[type=submit]::before, .show-more-btn::before{
@@ -354,4 +358,18 @@ button[type=submit]:hover, .show-more-btn:hover{
     top: 0;
 }
 
+
+.light-mode{
+    background: linear-gradient(112.1deg, rgb(32, 38, 57) 11.4%, rgb(63, 76, 119) 70.2%);
+     color: white;
+}
+.dark-mode-navigation{
+    color: white;
+    background-color: black;
+}
+.body-color-change{
+    background: linear-gradient(-20deg, #2b5876 0%, #4e4376 100%);    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
 
