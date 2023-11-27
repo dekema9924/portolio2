@@ -142,7 +142,12 @@ span{
   text-fill-color: transparent;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  animation: textclip 2s linear infinite;
+  -webkit-animation:  textclip 2s linear infinite;
+  -ms-animation:  textclip 2s linear infinite;
+  -moz-animation:  textclip 2s linear infinite;
+  -o-animation:  textclip 2s linear infinite;
+  animation:  textclip 2s linear infinite;
+
   display: inline-block;
       font-size: 2.5em;
 }
